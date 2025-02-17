@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
 Allow: /
-sitemap: https://bocilsdcolmek.pages.dev/sitemap.xml

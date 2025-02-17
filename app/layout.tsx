@@ -2,19 +2,20 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SITENAME } from "@/lib/constants";
 
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: `Bokep Indonesia - Video Bokep Indo Viral Terbaru`,
-    description: `Bokep Indonesia Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
+    title: `${SITENAME} - Video Bokep Indo Viral Terbaru`,
+    description: `${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
     metadataBase: new URL("https://bocilsdcolmek.pages.dev"),
     alternates: {
         canonical: `/`,
     },
     openGraph: {
-        title: `Bokep Indonesia - Video Bokep Indo Viral Terbaru`,
-        description: `Bokep Indonesia Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
+        title: `${SITENAME} - Video Bokep Indo Viral Terbaru`,
+        description: `${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
         url: `/`,
         type: `website`,
     },
@@ -34,8 +35,8 @@ export default function RootLayout({
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": `Bokep Indonesia`,
-        "description": `Bokep Indonesia Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
+        "name": `${SITENAME}`,
+        "description": `${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
         "logo": "https://bocilsdcolmek.pages.dev/favicon.ico",
         "url": "https://bocilsdcolmek.pages.dev",
         "founder":{
@@ -43,25 +44,14 @@ export default function RootLayout({
             "name":"admin",
             "url":"https://bocilsdcolmek.pages.dev"
             },
-            "foundingDate":"2024-06-09"
-        }
-        const jsonLd1 = {
-            "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": `Bokep Indonesia`,
-        "url": "https://bocilsdcolmek.pages.dev",
-        "description": `Bokep Indonesia Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
-        "image": "https://bocilsdcolmek.pages.dev/favicon.ico",
-        "potentialAction":{
-            "@type":"ReadAction",
-            "target":"https://bocilsdcolmek.pages.dev"}
+            "foundingDate":"2024-06-10"
         }
         const jsonLd2 = {
             "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": `Bokep Indonesia`,
+        "name": `${SITENAME}`,
         "url": "https://bocilsdcolmek.pages.dev",
-        "description": `Bokep Indonesia Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
+        "description": `${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pelajar.`,
         "potentialAction": { 
         "@type": "SearchAction", 
           "target": "https://bocilsdcolmek.pages.dev/?q={search_term}", 
@@ -79,10 +69,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd1) }}
         />
         <script
           type="application/ld+json"
